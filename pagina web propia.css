@@ -1,0 +1,45 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "ENCABEZADO ENCABEZADO ENCABEZADO ENCABEZADO" "MENU-LATERAL CONTENIDO CONTENIDO CONTENIDO" 
+  "PIE-DE\ PÁGINA PIE-DE\ PÁGINA PIE-DE\ PÁGINA PIE-DE\ PÁGINA";
+}
+
+.ENCABEZADO {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . LOGO" "MENU-PRINCIPAL MENU-PRINCIPAL MENU-PRINCIPAL";
+  grid-area: ENCABEZADO;
+  font-style:Bradley Hand ITC;
+  color: white;
+  background-color: #6C1273;
+}
+
+.MENU-PRINCIPAL { grid-area: MENU-PRINCIPAL;
+                  background-color: #6C1273; }
+
+.LOGO { grid-area: LOGO; }
+
+.MENU-LATERAL { grid-area: MENU-LATERAL;
+                background-color: #6C1273; }
+
+.CONTENIDO { grid-area: CONTENIDO; 
+              background-color: #121973;
+              font-style: Bookman Old Style;
+            }
+
+.PIE-DE\ PÁGINA {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . ." ". LOCALIZACIÓN COMENTARIOS";
+  grid-area: PIE-DE\ PÁGINA;
+  background-color: #6C1273;
+}
+
+.COMENTARIOS { grid-area: COMENTARIOS; }
+
+.LOCALIZACIÓN { grid-area: LOCALIZACIÓN; }
+
