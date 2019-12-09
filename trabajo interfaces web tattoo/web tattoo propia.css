@@ -65,6 +65,13 @@
       color:black;
 }
 
+.menu-secundario >p {
+      font-family: "Ink Free";
+      font-weight: bold;
+      font-size: 30px;
+      color:black;
+}
+
 .contenido { grid-area: contenido;
               background-color: #121973;
               width: 100%;
@@ -72,37 +79,80 @@
               }
 .contenido>p {
       font-family: "Bookman Old Style";
+      text-align: left;
+      font-size: 19px;
+      margin-top: 30px;
+      margin-left: 20px;
+
 }
+
+.contenido>img {
+   width:400px;
+   float: right;
+   margin-top: 40px;
+   margin-right: 40px;
+ }
+
+
 
 .pie-de-pagina {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: ". comentarios localizacion" ". comentarios localizacion";
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr;
+  grid-template-areas: ".tattooideal tattooideal comentarios localizacion " ".tattooideal tattooideal comentarios localizacion ";
   grid-area: pie-de-pagina;
   background-color: #6C1273;
   bottom: 0px;
   height: 200px;
   width: 100%;
   font-size: 20px;
+
+}
+
+.tattooideal { grid-area: tattooideal;
+                bottom: 0px;
+              text-align: left;
+              align-content: left;
+                 }
+
+.tattooideal >p >a{
+      font-family: "Ink Free";
+      font-weight: bold;
+      margin-right: 20px;
+      color: black;
+    text-align: left;
+      align-content: left;
+    }
+.enviar{
+  margin-bottom: 5px;
 }
 
 .comentarios { grid-area: comentarios;
                 bottom: 0px;
                 text-align: right;
+                 margin-right: 30px;
                  }
 
-.comentarios >p {
+.comentarios >p >a{
       font-family: "Ink Free";
       font-weight: bold;
+      color: black;
 }
 
 .localizacion { grid-area: localizacion;
                 bottom: 0px;
                 text-align: right; }
 
-.localizacion >p {
+.localizacion >p >a{
       font-family: "Ink Free";
       font-weight: bold;
       margin-right: 20px;
+      color: black;
       }
+
+.mapa {
+  width:"600";
+  height:"300";
+  pointer-events: all; 
+
+}
