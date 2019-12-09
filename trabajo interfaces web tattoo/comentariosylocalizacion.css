@@ -12,7 +12,7 @@
   grid-template-rows: 1.4fr 0.6fr;
   grid-template-areas: "titulo titulo logo" "menu-principal menu-principal menu-principal";
   grid-area: encabezado;
-  background-color: #6C1273;
+   background-color: #AC58FA;
   height: 200px;
   width: 100%;
   padding-top: 7px;
@@ -34,11 +34,11 @@
 .titulo > h1 {
       font-family: "Ink Free";
       font-size: 50px;
-      color: white;
+      color: black;
 }
 
 .menu-principal { grid-area: menu-principal; 
-                  background-color: #6C7583;
+                  background-color: #8A084B;
                   text-align: left;
                   font-size: 15px;
                   bottom: 0px;
@@ -57,11 +57,12 @@
 
 
 .contenido { grid-area: contenido;
-              background-color: #121973;
+              background-color: #0B0B3B;
               width: 100%;
               font-family: "Bookman Old Style";
               text-align: center;
               font-size: 20px;
+              color:white;
               
               }
 
@@ -72,35 +73,35 @@
   grid-template-rows:1fr 1fr 1fr;
   grid-template-areas: ".tattooideal tattooideal comentarios localizacion " ".tattooideal tattooideal comentarios localizacion ";
   grid-area: pie-de-pagina;
-  background-color: #6C1273;
+  background-color: #8A084B;
   bottom: 0px;
-  height: 200px;
+  height: 150px;
   width: 100%;
   font-size: 20px;
 
 }
 
 .tattooideal { grid-area: tattooideal;
-                bottom: 0px;
-                text-align: left;
+              text-align: right;
+               margin-top: 20px;
                  }
 
 .tattooideal >p >a{
       font-family: "Ink Free";
       font-weight: bold;
-      margin-right: 20px;
       color: black;
-       text-align: left;
+      
     }
 
 .enviar{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .comentarios { grid-area: comentarios;
                 bottom: 0px;
-                text-align: right;
-                margin-right: 30px;
+                margin-left: 70px;
+                 margin-right: 70px;
+                 margin-top: 20px;
                  }
 
 .comentarios >p >a{
@@ -109,15 +110,17 @@
       color: black;
 }
 
+
 .localizacion { grid-area: localizacion;
                 bottom: 0px;
                 text-align: right;
+                 margin-top: 20px;
                  }
 
 .localizacion >p >a{
       font-family: "Ink Free";
       font-weight: bold;
-      margin-right: 20px;
+      margin-right: 30px;
       color: black;
 
       }
