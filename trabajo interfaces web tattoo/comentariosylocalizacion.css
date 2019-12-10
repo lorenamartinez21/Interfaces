@@ -6,6 +6,29 @@
   "pie-de-pagina pie-de-pagina pie-de-pagina pie-de-pagina";
 }
 
+
+@media screen and (max-width: 411px) {
+      .contenido{
+        width: 411px;
+      }
+
+      .titulo{
+        width: 411px;
+      }
+
+      .encabezado{
+        width: 411px;
+      }
+
+      .menu-principal{
+        width: 411px;
+      }
+
+      .logo{
+        width: 411px;
+      }
+}
+
 .encabezado {
   display: grid;
   grid-template-columns: 1fr 1.6fr 0.4fr;
@@ -115,7 +138,25 @@
                 bottom: 0px;
                 text-align: right;
                  margin-top: 20px;
+                 display: flex;
+                 flex: 50%;
+
+                 animation-duration: 3s;
+                animation-name: slidein;
+}
+
+                @keyframes slidein {
+                from {
+                margin-left: 100%;
+                 width: 300%
+                  }
+
+                to {
+                margin-left: 0%;
+                width: 100%;
                  }
+                }
+                 
 
 .localizacion >p >a{
       font-family: "Ink Free";
@@ -123,5 +164,9 @@
       margin-right: 30px;
       color: black;
 
+
       }
+
+
+
 

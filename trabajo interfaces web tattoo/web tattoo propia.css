@@ -18,6 +18,12 @@
   padding-top: 7px;
 }
 
+@media screen and (max-width: 600px) {
+  .left, .main, .right {
+    width: 50%; 
+  }
+}
+
 .logo { grid-area: logo;
         bottom: 0px;
         margin-left: 40px;
@@ -50,6 +56,8 @@
       color:black;
       font-size: 20px;
       margin-left: 28%;
+      animation-duration: 3s;
+        animation-name: slidein;
 
     }
 
@@ -108,18 +116,33 @@
   height: 150px;
   width: 100%;
   font-size: 20px;
+ 
 
 }
+
+ @keyframes slidein {
+                from {
+                margin-left: 100%;
+                 width: 300%
+                  }
+
+                to {
+                margin-left: 0%;
+                width: 100%;
+                 }
+                }
 
 .tattooideal { grid-area: tattooideal;
               text-align: right;
                margin-top: 20px;
+              
                  }
 
 .tattooideal >p >a{
       font-family: "Ink Free";
       font-weight: bold;     
       color: black;
+
 
     }
 .enviar{
@@ -130,29 +153,29 @@
                 bottom: 0px;
                  margin-left: 100px;
                  margin-top: 20px;
+               
                  }
 
 .comentarios >p >a{
       font-family: "Ink Free";
       font-weight: bold;
       color: black;
+  
 }
 
 .localizacion { grid-area: localizacion;
                 bottom: 0px;
                 text-align: right;
-                 margin-top: 20px; }
+                 margin-top: 20px;
+                 }
 
 .localizacion >p >a{
       font-family: "Ink Free";
       font-weight: bold;
       margin-right: 30px;
       color: black;
+ 
       }
 
-.mapa {
-  width:"600";
-  height:"300";
-  pointer-events: all; 
 
-}
+
